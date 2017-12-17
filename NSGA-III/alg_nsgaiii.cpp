@@ -15,6 +15,7 @@
 
 #include "SimulatedBGX.h"
 #include "BoundaryUniformMutation.h"
+#include "FlipBitMutation.h"
 
 #include <vector>
 #include <fstream>
@@ -66,7 +67,7 @@ void CNSGAIII::Solve(CPopulation *solutions, const BProblem &problem)
 
 	// HERE - test - modification
 	CSimulatedBGX bgx(pc_);
-	CBoundaryUniformMutation bmut(1.0 / problem.num_variables(), eta_m_);
+	CBoundaryUniformMutation bmut(1.0 / problem.num_variables()); // ne prend pas eta_m_ en paramètre
 	// -----------------
 
 	Gnuplot gplot;

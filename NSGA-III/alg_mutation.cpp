@@ -6,6 +6,7 @@
 
 #include <cstddef>
 #include <algorithm>
+
 using std::size_t;
 
 // ----------------------------------------------------------------------
@@ -14,8 +15,7 @@ using std::size_t;
 //
 // ref: http://www.slideshare.net/paskorn/simulated-binary-crossover-presentation#
 // ---------------------------------------------------------------------
-bool CPolynomialMutation::operator()(CIndividual *indv, double mr, double eta) const
-{
+bool CPolynomialMutation::operator()(CIndividual *indv, double mr, double eta) const {
     //int j;
     //double rnd, delta1, delta2, mut_pow, deltaq;
     //double y, yl, yu, val, xy;

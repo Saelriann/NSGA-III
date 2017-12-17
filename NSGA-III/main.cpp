@@ -19,8 +19,7 @@
 
 using namespace std;
 
-int main()
-{
+int main() {
 	ifstream exp_list("explist.ini");
 	if (!exp_list) { cout << "We need the explist.ini file." << endl; return 1; }
 
